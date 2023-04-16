@@ -55,6 +55,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 50px;
     overflow-x: hidden;
 }
@@ -175,7 +176,7 @@ body {
 .div1_child1_1>input,
 .div1_child1_2>input,
 .div1_child1_3>input {
-    border:none;
+    border:0px;
     /* transition: transform 9ms ease-in-out; */
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
