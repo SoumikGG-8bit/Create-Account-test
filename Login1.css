@@ -67,7 +67,7 @@ body {
     height: 60px;
     width: 400px;
     border-radius: 1rem;
-    outline: 3px solid black;
+    border: 3px solid black;
     position: relative;
     z-index: initial;
     padding-left: 10px;
