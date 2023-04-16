@@ -67,7 +67,7 @@ body {
     height: 60px;
     width: 400px;
     border-radius: 1rem;
-    border: 3px solid black;
+    outline: 3px solid black;
     position: relative;
     z-index: initial;
     padding-left: 10px;
@@ -175,6 +175,7 @@ body {
 .div1_child1_1>input,
 .div1_child1_2>input,
 .div1_child1_3>input {
+    border:none;
     /* transition: transform 9ms ease-in-out; */
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
