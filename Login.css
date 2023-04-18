@@ -38,7 +38,6 @@ body {
 }
 
 .div2 {
-    /* background: url(46929.jpg); */
     background-size: cover;
     border-left: 2px solid black;
     display: flex;
@@ -63,11 +62,10 @@ body {
 .div1_child2,
 .div1_child3,
 .div1_child4 {
-
     height: 60px;
     width: 400px;
     border-radius: 1rem;
-    outline: 3px solid black;
+    border: 3px solid black;
     position: relative;
     z-index: initial;
     padding-left: 10px;
@@ -86,7 +84,7 @@ body {
 .div1_child1_1>p,
 .div1_child2_2>p,
 .div1_child3_3>p,
-.div1_child4_3>p{
+.div1_child4_3>p {
     font-family: Inter;
     font-size: 20px;
     margin: 10px;
@@ -97,12 +95,14 @@ body {
     font-size: 22px;
 }
 
-.div1_child5 > a {
+.div1_child5>a {
     text-decoration: none;
     color: #000;
 }
-.div1_child5 > a:hover , {
-    text-decoration: underline blue;
+
+.div1_child5>a:hover
+{
+text-decoration: underline black 1px;
 }
 
 .div1>h3 {
@@ -198,11 +198,12 @@ body {
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
-   font-family: Inter;
-   font-size: 15px;
-   margin-top: 30px;
+    font-family: Inter;
+    font-size: 15px;
+    margin-top: 30px;
 }
-.some_links > p > a {
+
+.some_links>p>a {
     text-decoration: none;
     color: #000;
     font-family: Inter;
@@ -210,11 +211,32 @@ body {
     font-weight: 500;
     margin-left: 20px;
 }
-.link1:nth-child(2){
+
+.link1:nth-child(2) {
     margin-left: 30px;
 }
-.link2{
-font-size: 20px;
-margin-right: 20px;
 
+.link2 {
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .div2 {
+        display: none;
+    }
+    .div1_child1_1>input,
+    .div1_child2_2>input,
+    .div1_child3_3>input {
+
+        /* scale: 1.1; */
+        width: 50vw;
+    }
+    .div1_child1_1>input:focus,
+    .div1_child2_2>input:focus,
+    .div1_child3_3>input:focus {
+        outline-color: dodgerblue;
+        scale: 1.1;
+    }
 }
